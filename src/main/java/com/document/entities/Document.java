@@ -11,7 +11,7 @@ public class Document {
     private long id;
     private String name;
     @Lob
-    private Byte[] data;
+    private byte[] data;
 
     public long getId() {
         return id;
@@ -29,11 +29,11 @@ public class Document {
         this.name = name;
     }
 
-    public Byte[] getData() {
+    public byte[] getData() {
         return data;
     }
 
-    public void setData(Byte[] data) {
+    public void setData(byte[] data) {
         this.data = data;
     }
 }

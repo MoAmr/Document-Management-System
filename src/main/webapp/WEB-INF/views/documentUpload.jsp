@@ -6,10 +6,12 @@
 </head>
 <body>
 <h2>Document Upload</h2>
-<form action="/upload" method="post" enctype="multipart/form-data">
+<form action="upload" method="post" enctype="multipart/form-data">
+    <pre>
     Id: <input type="text" name="id"/>
     Document: <input type="file" name="document"/>
     <input type="submit" name="submit" value="Upload"/>
+    </pre>
 </form>
 </body>
 </html>
