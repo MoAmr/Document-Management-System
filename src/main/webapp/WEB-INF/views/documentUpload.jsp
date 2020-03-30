@@ -1,4 +1,6 @@
 <%@ page language="java" contentType="text/html" pageEncoding="utf-8" %>
+<%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@page isELIgnored="false" %>
 <html>
 <head>
     <meta http-equiv="content-type" content="text/html" charset="UTF-8">
@@ -13,5 +15,19 @@
     <input type="submit" name="submit" value="Upload"/>
     </pre>
 </form>
+<table>
+    <tr>
+        <th>id</th>
+        <th>name</th>
+        <th>link</th>
+    </tr>
+    <c:forEach var="document" items="${documents}">
+        <tr>
+            <td>${document.id}</td>
+            <td>${document.name}</td>
+            <td><a href="download?id=${document.id}">Download</a></td>
+        </tr>
+    </c:forEach>
+</table>
 </body>
 </html>

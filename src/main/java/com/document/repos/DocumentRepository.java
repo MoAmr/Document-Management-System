@@ -1,7 +1,7 @@
 package com.document.repos;
 
 import com.document.entities.Document;
-import org.springframework.data.repository.CrudRepository;
+import org.springframework.data.jpa.repository.JpaRepository;
 
-public interface DocumentRepository extends CrudRepository<Document, Long> {
+public interface DocumentRepository extends JpaRepository<Document, Long> {
 }
